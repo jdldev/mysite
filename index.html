@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JL Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css"/>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+		<div class="mainpage" id="blur">
+
+			<header>
+				<a href="#" class="logo">JL</a>
+				<ul>
+					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#" onclick="about_toggle()">About</a></li>
+					<li><a href="#" onclick="contact_toggle()">Contact</a></li>
+
+				</ul>
+				
+			</header>
+
+			<section>
+				<img class="landing" src="assets/images/stars.png" id="stars">
+				<img class="landing" src="assets/images/moon.png" id="moon">
+				<img class="landing" src="assets/images/mountains_behind.png" id="mountains_behind">
+				<h2 id="mainText">Jasper Lagan</h2>
+				<a href="#content" id="explorebtn">Explore</a>
+				
+			</section>
+			
+			<div class="content" id="content">
+				
+				<div class="container" id="blur">
+					<div class="card">
+						<img class="card-img" src="assets/images/sait.png">
+						<h2>Education</h2>
+						<p>IT Diploma majoring in Computer Systems, graduated in October 2021. </p>
+						<button class="expand_btn" onclick="education_toggle()">Expand</button>
+					</div>
+					<div class="card">
+						<img class="card-img" src="assets/images/setup.jpg">
+						<h2>Skillset</h2>
+						<p>
+							<ul>
+								<li>Front/Back-end Development</li>
+								<li>Windows Active Directory</li>
+								<li>Network Security</li>
+								<li>VMware</li>
+							</ul>
+						</p>
+						<button class="expand_btn" onclick="skillset_toggle()">Expand</button>
+					</div>
+					<div class="card">
+						<img class="card-img" src="assets/images/arduino.png">
+						<h2>Projects</h2>
+						<p>
+							Explore some of my most notable projects
+						</p>
+						<button class="expand_btn" onclick="projects_toggle()">Expand</button>
+						
+					</div>
+
+				</div>
+				
+			</div>
+			
+			
+
+		</div>
+
+			<div class="about_content" id="about_popup">
+				<h3>About</h3>
+				<p>
+					Seeking opportunities and continuosly expanding my skillset with a hands-on approach.
+				</p>
+				<button class="close_btn" onclick="about_toggle()">Close</a>
+			</div>
+
+			<div class="contact_content" id="contact_popup">
+				<h2>Send a Message</h2>
+				
+				<div class="socials" id="socials">
+					<img id="linkedin" src="assets/images/linkedin.png" alt="">
+					<br></br>
+					<p>LinkedIn</p>
+					<img  id="github" src="assets/images/github.png" alt="">
+					<p>Github</p>
+				</div>
+				<form target="_blank" name="contact-form" action="https://formsubmit.co/81caf3a52d240bca106b19fd84a31c9f" method="POST">
+					<div class="form-element">
+						<label for="name"></label>
+						<input type="text" name="name" id="name" placeholder="Full Name" required>
+					</div>
+					<div class="form-element">
+						<label for="email"></label>
+						<input type="text" name="email" id="email" placeholder="Email" required>
+					</div>
+					<div class="form-element">
+						<label for="message"></label>
+						<textarea class="message" name="message" id="message" rows="5" placeholder="Your Message..." required></textarea>
+					</div>
+						<div class="form-element">
+						<button type="submit" class="send_btn" id="send_btn" >Send</button>
+					</div>
+				</form>
+			
+				<button class="close_btn" onclick="contact_toggle()">Close</button>
+			</div>
+
+			<div class="modal" id="education_popup">
+				<h3>Courses and Concepts Covered: </h3>
+				<p>
+					<ul>
+						<li>Full Stack Development</li>
+						<li>IT Security</li>
+						<li>Server Service Administration</li>
+						<li>Client-Server Administration</li>
+						<li>Scripting for System Administrators</li>
+					</ul>
+				</p>
+				<button class="close_btn" onclick="education_toggle()">Close</button>
+			</div>
+
+			<div class="modal" id="skillset_popup">
+				<h3>Languages: </h3>
+					<p>HTML, CSS, Python, Javascript</p>
+					
+				<h3>Windows AD DS: </h3>
+					<p>Experienced in Active Directory Domain Services</p>
+
+					<button class="close_btn" onclick="skillset_toggle()">Close</button>
+			</div>
+
+			<div class="modal" id="projects_popup">
+				<p>
+					<ul>
+						<li>Shopology</li>
+						<li>Enterprise Network Environement</li>
+						<li>Wireshark Analysis</li>
+						<li>Arduino</li>
+					</ul>
+				</p>
+				<button class="close_btn" onclick="projects_toggle()">Close</button>
+			</div>
+
+	
+	<script src="assets/js/parallax.js"></script>
+	<script src="assets/js/popup.js"></script>
+	</body>
+
+	
+</html>
